@@ -1,5 +1,3 @@
-Here's a structured README with relevant text supporting each GIF:
-
 ---
 
 # **Authentication Demonstration**
