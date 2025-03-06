@@ -98,7 +98,7 @@ const Cart = () => {
         </Col>
         <Col span={6}>
           <Card style={{ textAlign: "center" }}>
-            <h2>Total: ${CartStore.cart.reduce((sum, prod) => sum + prod.price * prod.quantity, 0)}</h2>
+            <h2>Total: ${Math.round(CartStore.cart.reduce((sum, prod) => sum + prod.price * prod.quantity, 0))}</h2>
             <Button type="primary" danger onClick={() => clearCart()}>Clear Cart</Button>
           </Card>
         </Col>
