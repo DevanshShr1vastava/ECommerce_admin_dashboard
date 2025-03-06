@@ -10,7 +10,7 @@ Following are recorded GIF demonstrations showcasing the features of this admin 
 - [Authentication Demo](./Demonstrations/LoginDemonstration.md)
 - [Product Management Demo](./Demonstrations/ProductDemonstrations.md)
 - [Cart Management Demo](./Demonstrations/CartDemonstration.md)
-- [User Management Demo](./Demonstrations/UserDemonstration.md)
+- [User Management Demo](./Demonstrations/UsersDemonstration.md)
 - [Order Management Demo](./Demonstrations/OrdersDemonstration.md)
 - [Blog & Comments Demo](./Demonstrations/BlogDemonstrations.md)
 
