@@ -1,54 +1,109 @@
-# React + TypeScript + Vite
+# **E-Commerce Admin Dashboard**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Overview**
+This project is a fully functional **E-Commerce Admin Dashboard** built with **React, Vite, and TypeScript**. It allows admins to manage products, users, orders, carts, blogs, comments, quotes, and recipes using the **DummyJSON API**.
 
-Currently, two official plugins are available:
+## **Features**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### **1. Authentication**
+<div align="left">
+  <ul>
+    <li>Implemented login functionality using <strong>React Hook Form</strong> for validation.</li>
+    <li>Handled failed login attempts with proper error messages.</li>
+    <li>Stored authentication tokens using <strong>Zustand</strong>.</li>
+  </ul>
+</div>
+<img align="right" src="https://github.com/user-attachments/assets/0cc02604-f7fa-443c-b21e-c3843d297788" />
 
-## Expanding the ESLint configuration
+### **2. Product Management**
+<div align="left">
+  <ul>
+    <li>Displayed all products with details (<code>GET /products</code>, <code>GET /products/{id}</code>).</li>
+    <li>Implemented <strong>search, filter, and sorting</strong> using <strong>useState</strong> and <strong>useReducer</strong>.</li>
+    <li>Enabled add, edit, and delete functionality via API.</li>
+    <li>Form validation handled with <strong>React Hook Form</strong>.</li>
+    <li>UI built using <strong>Ant Design</strong>.</li>
+  </ul>
+</div>
+<img align="right" src="https://github.com/user-attachments/assets/6d08b830-164c-4fb9-ab94-8b373d072248" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **3. Cart Management (Admin Perspective)**
+<div align="left">
+  <ul>
+    <li>Fetched cart data (<code>GET /carts</code>).</li>
+    <li>Added and removed items from the cart using API.</li>
+    <li>Implemented cart summary with total price calculation.</li>
+    <li>Used <strong>Zustand</strong> for global cart state management.</li>
+  </ul>
+</div>
+<img align="right" src="https://github.com/user-attachments/assets/3c53ba7c-6c84-48b1-b67f-c0dd139315fe" />
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### **4. User Management**
+<div align="left">
+  <ul>
+    <li>Displayed all users with details (<code>GET /users</code>, <code>GET /users/{id}</code>).</li>
+    <li>Implemented <strong>search and filtering</strong>.</li>
+    <li>Enabled admin to edit user details.</li>
+  </ul>
+</div>
+<img align="right" src="https://github.com/user-attachments/assets/93d28a55-007d-4ac6-8220-7d2bb4ba69ad" />
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### **5. Order Management**
+<div align="left">
+  <ul>
+    <li>Fetched all orders (<code>GET /carts</code>).</li>
+    <li>Displayed order details and associated users.</li>
+    <li>Implemented <strong>order status update</strong> feature.</li>
+  </ul>
+</div>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### **6. Blog & Comments Section**
+<div align="left">
+  <ul>
+    <li>Fetched posts (<code>GET /posts</code>) and comments (<code>GET /comments</code>).</li>
+    <li>Enabled adding new comments (<code>POST /comments/add</code>).</li>
+    <li>Managed user comments globally using <strong>Zustand</strong>.</li>
+  </ul>
+</div>
+<img align="right" src="https://github.com/user-attachments/assets/4ccff95b-2fb8-44b4-8833-fb9d71961c20" />
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### **7. Quotes & Recipes**
+<div align="left">
+  <ul>
+    <li>Displayed <strong>motivational quotes</strong> (<code>GET /quotes</code>).</li>
+    <li>Displayed <strong>recipes</strong> (<code>GET /recipes</code>).</li>
+  </ul>
+</div>
+
+## **Tech Stack**
+- **React + Vite + TypeScript**
+- **UI Library**: Ant Design
+- **React Query (TanStack Query)** for API calls
+- **Axios** for handling HTTP requests
+- **React Hook Form** for form validation
+- **useState, useReducer** for component state management
+- **Zustand** for global state management
+- **React Router** for navigation
+
+## **Additional Features**
+- Implemented **Dark Mode & Light Mode** using `useContext`.
+- Added **pagination** for large datasets.
+
+## **API Endpoints Used**
+Refer to [DummyJSON API](https://dummyjson.com/docs) for detailed documentation.
+
+- `POST /auth/login` - User authentication
+- `GET /users` - List users
+- `GET /users/{id}` - Get user details
+- `GET /products` - List products
+- `GET /products/{id}` - Get product details
+- `POST /carts/add` - Create a new cart (order)
+- `GET /carts` - List all carts (orders)
+- `GET /carts/{id}` - Get cart details
+- `DELETE /carts/{id}` - Cancel an order
+- `GET /quotes` - Fetch quotes
+- `GET /recipes` - Fetch recipes
+- `GET /posts` - Fetch posts
+- `GET /comments` - Fetch comments
+- `POST /comments/add` - Add a comment
+
