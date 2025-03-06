@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ecommerce Application</title>
+        <style>
+            body,
+            html {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            /* Arrow visibility for both themes */
+.ant-carousel .slick-prev, .ant-carousel .slick-next {
+  color: #000 !important; /* Light theme - visible arrows */
+}
+
+body[data-theme='dark'] .ant-carousel .slick-prev,
+body[data-theme='dark'] .ant-carousel .slick-next {
+  color: #fff !important; /* Dark theme - visible arrows */
+}
+
+/* Dot visibility for both themes */
+.ant-carousel .slick-dots li button {
+  background-color: rgba(0, 0, 0, 0.4) !important; /* Light theme - dark dots */
+  border: none !important;
+}
+
+body[data-theme='dark'] .ant-carousel .slick-dots li button {
+  background-color: rgba(255, 255, 255, 0.4) !important; /* Dark theme - light dots */
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background-color: rgba(0, 0, 0, 0.7) !important; /* Active dot color for light theme */
+}
+
+body[data-theme='dark'] .ant-carousel .slick-dots li.slick-active button {
+  background-color: rgba(255, 255, 255, 0.7) !important; /* Active dot color for dark theme */
+}
+
+        </style>
+    </head>
+    <body data-theme="dark">
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>
