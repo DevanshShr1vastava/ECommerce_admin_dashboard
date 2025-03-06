@@ -3,6 +3,20 @@
 ## **Overview**
 This project is a fully functional **E-Commerce Admin Dashboard** built with **React, Vite, and TypeScript**. It allows admins to manage products, users, orders, carts, blogs, comments, quotes, and recipes using the **DummyJSON API**.
 
+## **Feature Demonstrations**
+Following are recorded GIF demonstrations showcasing the features of this admin dashboard. Click on the links below to view the corresponding demonstrations:
+
+- [Dashboard Demo](./Demonstrations/DashboardDemonstration.md)
+- [Authentication Demo](./Demonstrations/LoginDemonstration.md)
+- [Product Management Demo](./Demonstrations/ProductDemonstrations.md)
+- [Cart Management Demo](./Demonstrations/CartDemonstration.md)
+- [User Management Demo](./Demonstrations/UserDemonstration.md)
+- [Order Management Demo](./Demonstrations/OrdersDemonstration.md)
+- [Blog & Comments Demo](./Demonstrations/BlogDemonstrations.md)
+
+Click on any link to view the detailed demonstration in the respective README file.
+
+
 ## **Features**
 
 ### **1. Authentication**
@@ -107,16 +121,4 @@ Refer to [DummyJSON API](https://dummyjson.com/docs) for detailed documentation.
 - `GET /comments` - Fetch comments
 - `POST /comments/add` - Add a comment
 
-## **Feature Demonstrations**
-We have recorded GIF demonstrations showcasing the features of this admin dashboard. Click on the links below to view the corresponding demonstrations:
-
-- [Authentication Demo](./demos/authentication.md)
-- [Product Management Demo](./demos/product-management.md)
-- [Cart Management Demo](./demos/cart-management.md)
-- [User Management Demo](./demos/user-management.md)
-- [Order Management Demo](./demos/order-management.md)
-- [Blog & Comments Demo](./demos/blog-comments.md)
-- [Quotes & Recipes Demo](./demos/quotes-recipes.md)
-
-Click on any link to view the detailed demonstration in the respective README file.
 
