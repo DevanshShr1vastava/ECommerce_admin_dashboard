@@ -27,6 +27,14 @@ Click on any link to view the detailed demonstration in the respective README fi
     <li>Stored authentication tokens using <strong>Zustand</strong>.</li>
   </ul>
 </div>
+
+####  Quotes & Recipes
+<div align="left">
+  <ul>
+    <li>Displayed <strong>motivational quotes</strong> (<code>GET /quotes</code>).</li>
+    <li>Displayed <strong>recipes</strong> (<code>GET /recipes</code>).</li>
+  </ul>
+</div>
 <img align="right" src="https://github.com/user-attachments/assets/0cc02604-f7fa-443c-b21e-c3843d297788" />
 
 ### **2. Product Management**
@@ -81,13 +89,7 @@ Click on any link to view the detailed demonstration in the respective README fi
 </div>
 <img align="right" src="https://github.com/user-attachments/assets/4ccff95b-2fb8-44b4-8833-fb9d71961c20" />
 
-### **7. Quotes & Recipes**
-<div align="left">
-  <ul>
-    <li>Displayed <strong>motivational quotes</strong> (<code>GET /quotes</code>).</li>
-    <li>Displayed <strong>recipes</strong> (<code>GET /recipes</code>).</li>
-  </ul>
-</div>
+
 
 ## **Tech Stack**
 - **React + Vite + TypeScript**
