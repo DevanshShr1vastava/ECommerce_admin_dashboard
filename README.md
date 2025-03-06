@@ -107,3 +107,16 @@ Refer to [DummyJSON API](https://dummyjson.com/docs) for detailed documentation.
 - `GET /comments` - Fetch comments
 - `POST /comments/add` - Add a comment
 
+## **Feature Demonstrations**
+We have recorded GIF demonstrations showcasing the features of this admin dashboard. Click on the links below to view the corresponding demonstrations:
+
+- [Authentication Demo](./demos/authentication.md)
+- [Product Management Demo](./demos/product-management.md)
+- [Cart Management Demo](./demos/cart-management.md)
+- [User Management Demo](./demos/user-management.md)
+- [Order Management Demo](./demos/order-management.md)
+- [Blog & Comments Demo](./demos/blog-comments.md)
+- [Quotes & Recipes Demo](./demos/quotes-recipes.md)
+
+Click on any link to view the detailed demonstration in the respective README file.
+
