@@ -1,9 +1,11 @@
 # **E-Commerce Admin Dashboard**
 
-## **Credentials**
-- Name : Devansh Shrivastava
-- email : devansh.shrivastava55@gmail.com
-- Education Status : MCA Final Semester
+## **Credentials for logging in**
+username : emilys
+password : emilyspass
+
+username : jamesd
+password : jamesdpass
 
 ## **Overview**
 This project is a fully functional **E-Commerce Admin Dashboard** built with **React, Vite, and TypeScript**. It allows admins to manage products, users, orders, carts, blogs, comments, quotes, and recipes using the **DummyJSON API**.
