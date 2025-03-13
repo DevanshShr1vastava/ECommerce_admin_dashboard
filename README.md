@@ -1,11 +1,9 @@
 # **E-Commerce Admin Dashboard**
 
 ## **Credentials for logging in**
-username : emilys
-password : emilyspass
+- username : emilys ||  password : emilyspass
 
-username : jamesd
-password : jamesdpass
+- username : jamesd || password : jamesdpass
 
 ## **Overview**
 This project is a fully functional **E-Commerce Admin Dashboard** built with **React, Vite, and TypeScript**. It allows admins to manage products, users, orders, carts, blogs, comments, quotes, and recipes using the **DummyJSON API**.
